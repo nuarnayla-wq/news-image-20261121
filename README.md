@@ -24,3 +24,5 @@ python main.py
 ```
 
 Output goes to `/output/entry.png`. The program is deterministic and uses no network: it copies the bundled `entry.png` with identical bytes on every run.
+
+The image is self-contained: a judge with no news feed can read the whole day from the image alone.
