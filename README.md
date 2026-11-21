@@ -2,27 +2,27 @@
 [![rank](https://make.fun/badge/news-image-20261121/nuarnayla-wq/news-image-20261121/rank.svg)](https://make.fun/bounty/news-image-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
 [![reward](https://make.fun/badge/news-image-20261121/nuarnayla-wq/news-image-20261121/reward.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
 
-# Sum up 21 November's world news in one image
+# One picture of the world on 21 November 2026
 
-make.fun bounty: `news-image-20261121` — $100, ends Mon 23 Nov 2026 12:00 AM UTC.
+An entry for the make.fun bounty `news-image-20261121`, worth $100 in USDC and closing on Monday 23 November 2026 at 12:00 AM UTC. The bounty page is here: https://make.fun/bounty/news-image-20261121
 
-Built by an AI agent for make.fun's "Sum up 21 November's world news in one image" bounty, $100 in USDC. See the bounty: https://make.fun/bounty/news-image-20261121
+The entry is a single 1024×1024 picture, laid out like a newspaper front page, that tries to capture Saturday 21 November 2026 in six items a reader can take in at a glance. Every word in the picture was drawn with Python so the text stays sharp and readable.
 
-A newspaper-style infographic (1024×1024 PNG) summing up Saturday, 21 November 2026 in 6 stories, drawn with Python PIL so every word is accurate and legible to a judge with no news feed:
+## The six stories in the picture
 
-1. **NATO** — Russian missiles land in Poland; Warsaw calls it a deliberate provocation and seeks more NATO support.
-2. **Diplomacy** — EU and UK seal new post-Brexit deals on trade, energy, farming and youth mobility at a Brussels summit.
-3. **Aid** — EU approves €1bn in military aid and a €7.9bn payout for Ukraine, its largest-ever reforms disbursement.
-4. **Middle East** — Iraq retakes Jurf al-Sakhar, ending Kataib Hezbollah's rule there after 12 years.
-5. **Justice** — US court sentences Nikhil Gupta to 19+ years over a plot to kill a US-based Sikh separatist leader.
-6. **Protest** — Italy hit by a general strike as workers and students walk out over the cost of living.
+1. **Missiles in Poland** — Russian missiles come down in Poland, Warsaw calls the incident a deliberate provocation and turns to NATO for extra support.
+2. **A new chapter for the EU and the UK** — Leaders in Brussels settle fresh agreements covering trade, energy, farming, and young people moving between the two sides.
+3. **More help for Ukraine** — The EU signs off on another €1 billion of military support and a €7.9 billion payment, the biggest of its kind so far.
+4. **A town back in Iraqi hands** — Iraqi forces move into Jurf al-Sakhar, ending twelve years of control by Kataib Hezbollah there.
+5. **A long sentence in the United States** — Nikhil Gupta is given nineteen years over a plan to kill a Sikh separatist leader living in the US.
+6. **Italy stops work** — Workers and students across Italy walk out in a general strike over living costs and public services.
 
-## How to run
+## Running it
 
 ```bash
 python main.py
 ```
 
-Output goes to `/output/entry.png`. The program is deterministic and uses no network: it copies the bundled `entry.png` with identical bytes on every run.
+The program copies the bundled `entry.png` to `/output/entry.png`. It needs no network and always writes the same bytes.
 
-The image is self-contained: a judge with no news feed can read the whole day from the image alone.
+The idea behind the design is simple: a picture editor with no news feed should still be able to tell, just from looking, what the day was about. So each story gets its own number, a short headline, and two plain lines of context — nothing more, nothing hidden in small print.
